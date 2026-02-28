@@ -205,10 +205,16 @@ def crawl_category(category):
 
 
 # --------------------------------------------------
-# Write playlist
+# Write playlist (FIXED)
 # --------------------------------------------------
 
 def write_playlist(streams):
+
+    import os
+
+    if not streams:
+        print("ERROR: No streams to save")
+        return
 
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
@@ -216,34 +222,72 @@ def write_playlist(streams):
 
     ua_enc = quote(USER_AGENT)
 
+    vlc_path = os.path.abspath(OUTPUT_VLC)
+    tivimate_path = os.path.abspath(OUTPUT_TIVIMATE)
 
-    with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+    print("\nSaving playlists...")
+    print("VLC:", vlc_path)
+    print("Tivimate:", tivimate_path)
 
-        f.write(header)
+    # remove duplicates safely
+    unique = {}
+    for title, url in streams:
 
-        for title, url in streams:
+        if not url:
+            continue
 
-            f.write(f'#EXTINF:-1 group-title="RoxieStreams",{title}\n')
-            f.write(f'{url}\n\n')
+        title = title.strip() if title else "RoxieStreams"
+
+        unique[url] = title
+
+    print("Unique streams:", len(unique))
+
+    try:
+
+        with open(vlc_path, "w", encoding="utf-8", newline="\n") as f:
+
+            f.write(header)
+
+            for url, title in unique.items():
+
+                f.write(f'#EXTINF:-1 group-title="RoxieStreams",{title}\n')
+                f.write(f'{url}\n\n')
+
+        print("VLC playlist saved OK")
+
+    except Exception as e:
+
+        print("ERROR saving VLC playlist:", e)
 
 
-    with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
+    try:
 
-        f.write(header)
+        with open(tivimate_path, "w", encoding="utf-8", newline="\n") as f:
 
-        for title, url in streams:
+            f.write(header)
 
-            f.write(f'#EXTINF:-1 group-title="RoxieStreams",{title}\n')
-            f.write(f'{url}|referer={BASE_URL}|user-agent={ua_enc}\n\n')
+            for url, title in unique.items():
+
+                f.write(f'#EXTINF:-1 group-title="RoxieStreams",{title}\n')
+                f.write(f'{url}|referer={BASE_URL}|user-agent={ua_enc}\n\n')
+
+        print("Tivimate playlist saved OK")
+
+    except Exception as e:
+
+        print("ERROR saving Tivimate playlist:", e)
 
 
 # --------------------------------------------------
-# MAIN
+# MAIN (FIXED)
 # --------------------------------------------------
 
 def main():
 
+    import os
+
     print("Starting RoxieStreams scraper")
+    print("Working directory:", os.getcwd())
 
     load_domains()
 
@@ -258,7 +302,7 @@ def main():
         time.sleep(0.5)
 
 
-    print("\nTotal event pages:", len(all_event_pages))
+    print("\nTotal event pages found:", len(all_event_pages))
 
     all_streams = []
 
@@ -266,14 +310,18 @@ def main():
 
         streams = extract_streams_from_event(page)
 
-        all_streams.extend(streams)
+        if streams:
+
+            print("Found", len(streams), "streams in", page)
+
+            all_streams.extend(streams)
 
 
-    print("\nTotal streams found:", len(all_streams))
+    print("\nTotal raw streams:", len(all_streams))
 
     write_playlist(all_streams)
 
-    print("Playlist saved successfully")
+    print("\nDone.")
 
 
 if __name__ == "__main__":
