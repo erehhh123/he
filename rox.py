@@ -10,7 +10,7 @@ import sys
 
 BASE_URL = "https://roxiestreams.info/"
 CATEGORIES = ["", "soccer", "mlb", "nba", "nfl", "nhl", "fighting", "motorsports", "motogp",
-              "ufc", "ppv", "wwe-streams", "f1", "f1-streams", "nascar"]
+              "ufc", "ppv-streams-1", "ppv-streams-2", "wwe-streams", "f1", "f1-streams", "nascar"]
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
 REFERER = BASE_URL
