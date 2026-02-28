@@ -149,17 +149,28 @@ def extract_streams_from_event(url):
 # ---------------------------
 
 def crawl_category(category):
+
     url = urljoin(BASE_URL, category)
+
     print("Scanning category:", url)
+
     soup, html_text = fetch(url)
+
     if not soup:
         return []
-    links = set()
+
+    links = []
+
     for a in soup.find_all("a", href=True):
+
         href = urljoin(url, a["href"])
+
         if href.startswith(BASE_URL) and href != url:
-            links.add(href)
+
+            links.append((href, category if category else "misc"))
+
     print("Found", len(links), "event pages")
+
     return links
 
 # ---------------------------
@@ -201,21 +212,26 @@ def main():
     print("▶️ Starting RoxieStreams playlist generation...")
     load_domains()
 
-    all_event_pages = set()
-    for cat in CATEGORIES:
-        pages = crawl_category(cat)
-        all_event_pages |= pages
-        time.sleep(0.5)
+    all_event_pages = []
+
+for cat in CATEGORIES:
+
+    pages = crawl_category(cat)
+
+    all_event_pages.extend(pages)
+
+    time.sleep(0.5)
 
     print(f"\nTotal event pages: {len(all_event_pages)}")
 
     all_streams = []
-    for page in all_event_pages:
-        # Determine category from URL
-        cat = next((c for c in CATEGORIES if f"/{c}" in page), "misc")
-        streams = extract_streams_from_event(page)
-        for title, url in streams:
-            all_streams.append((title or "RoxieStream", url, cat))
+    for page, category in all_event_pages:
+
+    streams = extract_streams_from_event(page)
+
+    for title, url in streams:
+
+        all_streams.append((title or "RoxieStream", url, category))
 
     print(f"\nTotal streams found: {len(all_streams)}")
     write_playlist(all_streams, CATEGORIES)
