@@ -41,8 +41,8 @@ SESSION.headers.update(HEADERS)
 
 TIMEOUT = 20
 
-OUTPUT_VLC = "roxiestreams_all.m3u8"
-OUTPUT_TIVIMATE = "roxiestreams_all_tivimate.m3u8"
+OUTPUT_VLC = "Roxiestreams_VLC.m3u8"
+OUTPUT_TIVIMATE = "Roxiestreams_TiviMate.m3u8"
 
 
 # Match ALL possible getRandomStream calls
