@@ -1,87 +1,315 @@
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
-# Last Updated: 2026-02-28 22:12 UTC
+#EXTM3U
+# Generated 2026-02-28 23:08 UTC
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" tvg-id="Sports.Dummy.us" group-title="Roxiestreams - Random Events",Roxiestreams - MotoGP Grand Prix - Thailand
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/motogp.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/usa.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" tvg-id="Soccer.Dummy.us" group-title="Roxiestreams - Soccer",Soccer - Boca Juniors vs Gimnasia Mendoza
-https://602.xn--1000-ugoa0hsb9a0hb.com/tyc.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/usa.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" tvg-id="Soccer.Dummy.us" group-title="Roxiestreams - Soccer",Soccer - Cruzeiro vs Pouso Alegre
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/prem.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/usa.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" tvg-id="Soccer.Dummy.us" group-title="Roxiestreams - Soccer",Soccer - LeÃ³n vs Necaxa
-https://602.xn--1000-ugoa0hsb9a0hb.com/vix.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/usa.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/FsFmwC7K/Baseball3.png" tvg-id="MLB.Baseball.Dummy.us" group-title="Roxiestreams - MLB",Mlb - Minnesota Twins vs Boston Red Sox
-https://602.xn--1000-ugoa0hsb9a0hb.com/mlb.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/now.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/FsFmwC7K/Baseball3.png" tvg-id="MLB.Baseball.Dummy.us" group-title="Roxiestreams - MLB",Mlb - Atlanta Braves vs Baltimore Orioles
-https://602.xn--1000-ugoa0hsb9a0hb.com/mlb2.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/now.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/FsFmwC7K/Baseball3.png" tvg-id="MLB.Baseball.Dummy.us" group-title="Roxiestreams - MLB",Mlb - Toronto Blue Jays vs New York Yankees
-https://602.xn--1000-ugoa0hsb9a0hb.com/mlb3.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/now.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/FsFmwC7K/Baseball3.png" tvg-id="MLB.Baseball.Dummy.us" group-title="Roxiestreams - MLB",Mlb - Philadelphia Phillies vs Toronto Blue Jays
-https://602.xn--1000-ugoa0hsb9a0hb.com/mlb4.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/now.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/FsFmwC7K/Baseball3.png" tvg-id="MLB.Baseball.Dummy.us" group-title="Roxiestreams - MLB",Mlb - Washington Nationals vs New York Mets
-https://602.xn--1000-ugoa0hsb9a0hb.com/mlb5.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.833577.xyz/ppv.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" tvg-id="NBA.Basketball.Dummy.us" group-title="Roxiestreams - NBA",Nba - Portland Trail Blazers vs Charlotte Hornets
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/nba.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.lifesharper.com/ppv.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" tvg-id="NBA.Basketball.Dummy.us" group-title="Roxiestreams - NBA",Nba - Houston Rockets vs Miami Heat
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/nba2.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.xn--1000-ugoa0hsb9a0hb.com/ppv.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" tvg-id="NBA.Basketball.Dummy.us" group-title="Roxiestreams - NBA",Nba - Toronto Raptors vs Washington Wizards
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/nba3.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.serverbandel.sbs/ppv.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" tvg-id="NBA.Basketball.Dummy.us" group-title="Roxiestreams - NBA",Nba - Los Angeles Lakers vs Golden State Warriors
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/nba4.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/gala.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" tvg-id="NBA.Basketball.Dummy.us" group-title="Roxiestreams - NBA",Nba - New Orleans Pelicans vs Utah Jazz
-https://602.xn--1000-ugoa0hsb9a0hb.com/nba5.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/gala.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Boston Bruins vs Philadelphia Flyers
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl2.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/gala.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Edmonton Oilers vs San Jose Sharks
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl3.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/gala.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - New Jersey Devils vs St. Louis Blues
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl4.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/dep.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - New York Islanders vs Columbus Blue Jackets
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl5.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/dep.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Chicago Blackhawks vs Colorado Avalanche
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl6.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/dep.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Ottawa Senators vs Toronto Maple Leafs
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl7.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/dep.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Washington Capitals vs Montreal Canadiens
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl8.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/barca.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Buffalo Sabres vs Tampa Bay Lightning
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl9.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/barca.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Detroit Red Wings vs Carolina Hurricanes
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl10.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/barca.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Calgary Flames vs Los Angeles Kings
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl11.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/barca.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Nashville Predators vs Dallas Stars
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl12.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/one.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/mgMRQ7FR/nhl-logo-png-seeklogo-534236.png" tvg-id="NHL.Hockey.Dummy.us" group-title="Roxiestreams - NHL",Nhl - Vancouver Canucks vs Seattle Kraken
-https://602.xn--1000-ugoa0hsb9a0hb.com/nhl13.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/one.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/yY6B2pkv/F1.png" tvg-id="Racing.Dummy.us" group-title="Roxiestreams - Motorsports",Motorsports - Indycar Series
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/indycar.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/one.m3u8
 
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/yY6B2pkv/F1.png" tvg-id="Racing.Dummy.us" group-title="Roxiestreams - Motorsports",Motorsports - NASCAR Craftsman Truck Series - Race
-https://601.xn--1000-ugoa0hsb9a0hb.com/ncaa4.m3u8
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/one.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/ataide.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/ataide.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/ataide.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/ataide.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/sn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/sn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/sn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/sn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.833577.xyz/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.lifesharper.com/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.xn--1000-ugoa0hsb9a0hb.com/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.serverbandel.sbs/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.833577.xyz/para.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.lifesharper.com/para.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.xn--1000-ugoa0hsb9a0hb.com/para.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.serverbandel.sbs/para.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.833577.xyz/wwe.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.lifesharper.com/wwe.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.xn--1000-ugoa0hsb9a0hb.com/wwe.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.serverbandel.sbs/wwe.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/wwe2.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/wwe2.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/wwe2.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/wwe2.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/beines.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/beines.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/beines.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/beines.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.833577.xyz/sx.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.lifesharper.com/sx.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.xn--1000-ugoa0hsb9a0hb.com/sx.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://602.serverbandel.sbs/sx.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/sxalt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/sxalt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/sxalt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/sxalt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/burnley.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/burnley.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/burnley.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/burnley.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/football.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/football.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/football.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/football.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/golazo.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/golazo.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/golazo.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/golazo.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/main.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/newcastle.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/newcastle.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/newcastle.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/newcastle.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/fsp.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/fsp.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/fsp.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/fsp.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/cbssn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/cbssn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/cbssn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/cbssn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.833577.xyz/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.lifesharper.com/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.xn--1000-ugoa0hsb9a0hb.com/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://601.serverbandel.sbs/tnt.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.833577.xyz/tudn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.lifesharper.com/tudn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/tudn.m3u8
+
+#EXTINF:-1 group-title="RoxieStreams",RoxieStreams
+https://daffodil.serverbandel.sbs/tudn.m3u8
 
