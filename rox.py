@@ -3,13 +3,16 @@
 import re
 import html
 import time
-from urllib.parse import urljoin, urlparse, quote
+import random
+from urllib.parse import urljoin, quote
 from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
 
+
 BASE_URL = "https://roxiestreams.info/"
+DOMAINS_FILE = "domains.txt"
 
 CATEGORIES = [
     "",
@@ -42,10 +45,35 @@ TIMEOUT = 15
 OUTPUT_VLC = "roxiestreams_all.m3u8"
 OUTPUT_TIVIMATE = "roxiestreams_all_tivimate.m3u8"
 
-M3U8_REGEX = re.compile(r"https?://[^\"'\s<>]+\.m3u8[^\"'\s<>]*", re.IGNORECASE)
+
+STREAM_PATH_REGEX = re.compile(r"getRandomStream\(['\"]([^'\"]+\.m3u8)['\"],\s*['\"]([^'\"]+)['\"]\)")
+
 
 visited_pages = set()
 found_streams = set()
+domains = []
+
+
+# --------------------------------------------------
+# Load domains.txt
+# --------------------------------------------------
+
+def load_domains():
+
+    global domains
+
+    try:
+
+        with open(DOMAINS_FILE, "r") as f:
+
+            domains = [d.strip() for d in f if d.strip()]
+
+        print("Loaded", len(domains), "domains")
+
+    except:
+
+        print("domains.txt missing")
+        domains = []
 
 
 # --------------------------------------------------
@@ -66,6 +94,7 @@ def fetch(url):
         return soup, r.text
 
     except:
+
         return None, None
 
 
@@ -90,45 +119,20 @@ def clean_title(title):
 
 
 # --------------------------------------------------
-# Extract streams from text
+# Build stream URLs
 # --------------------------------------------------
 
-def extract_streams_from_text(text):
+def build_stream_urls(stream_path, subdomain):
 
-    streams = set()
+    urls = []
 
-    matches = M3U8_REGEX.findall(text)
+    for domain in domains:
 
-    for m in matches:
+        url = f"https://{subdomain}.{domain}/{stream_path}"
 
-        streams.add(m.strip())
+        urls.append(url)
 
-    return streams
-
-
-# --------------------------------------------------
-# Crawl iframe recursively
-# --------------------------------------------------
-
-def crawl_iframe(url, depth=0):
-
-    if depth > 3:
-        return set()
-
-    soup, html = fetch(url)
-
-    if not soup:
-        return set()
-
-    streams = extract_streams_from_text(html)
-
-    for iframe in soup.find_all("iframe", src=True):
-
-        iframe_url = urljoin(url, iframe["src"])
-
-        streams |= crawl_iframe(iframe_url, depth+1)
-
-    return streams
+    return urls
 
 
 # --------------------------------------------------
@@ -142,7 +146,7 @@ def extract_streams_from_event(url):
 
     visited_pages.add(url)
 
-    soup, html = fetch(url)
+    soup, html_text = fetch(url)
 
     if not soup:
         return []
@@ -152,44 +156,36 @@ def extract_streams_from_event(url):
     if soup.title:
         title = clean_title(soup.title.text)
 
-    streams = set()
+    streams = []
 
-    # direct matches
-    streams |= extract_streams_from_text(html)
+    matches = STREAM_PATH_REGEX.findall(html_text)
 
-    # video/source tags
-    for tag in soup.find_all(["video", "source"]):
+    for stream_path, subdomain in matches:
 
-        src = tag.get("src")
+        urls = build_stream_urls(stream_path, subdomain)
 
-        if src and ".m3u8" in src:
-            streams.add(src)
+        for u in urls:
 
-    # iframe streams
-    for iframe in soup.find_all("iframe", src=True):
+            if u not in found_streams:
 
-        iframe_url = urljoin(url, iframe["src"])
+                found_streams.add(u)
 
-        streams |= crawl_iframe(iframe_url)
+                streams.append((title, u))
 
-    results = []
+                print("Found:", u)
 
-    for s in streams:
-
-        results.append((title, s))
-
-    return results
+    return streams
 
 
 # --------------------------------------------------
-# Crawl category pages
+# Crawl category
 # --------------------------------------------------
 
 def crawl_category(category):
 
     url = urljoin(BASE_URL, category)
 
-    print("Scanning category:", url)
+    print("Scanning:", url)
 
     soup, html = fetch(url)
 
@@ -202,16 +198,9 @@ def crawl_category(category):
 
         href = urljoin(url, a["href"])
 
-        if BASE_URL not in href:
-            continue
+        if href.startswith(BASE_URL):
 
-        if any(x in href for x in CATEGORIES):
-            if href.rstrip("/") == url.rstrip("/"):
-                continue
-
-        event_pages.add(href)
-
-    print("Found", len(event_pages), "event links")
+            event_pages.add(href)
 
     return event_pages
 
@@ -257,44 +246,35 @@ def write_playlist(streams):
 
 def main():
 
-    print("Starting Roxiestreams scraper...")
+    print("Starting scraper")
 
-    all_event_pages = set()
+    load_domains()
+
+    all_pages = set()
 
     for cat in CATEGORIES:
 
         pages = crawl_category(cat)
 
-        all_event_pages |= pages
+        all_pages |= pages
 
         time.sleep(1)
 
-
-    print("\nTotal event pages:", len(all_event_pages))
+    print("Total pages:", len(all_pages))
 
     all_streams = []
 
-
-    for page in all_event_pages:
+    for page in all_pages:
 
         streams = extract_streams_from_event(page)
 
-        for title, url in streams:
+        all_streams.extend(streams)
 
-            if url not in found_streams:
-
-                found_streams.add(url)
-
-                all_streams.append((title, url))
-
-                print("Found stream:", title)
-
-
-    print("\nTotal streams found:", len(all_streams))
+    print("Total streams:", len(all_streams))
 
     write_playlist(all_streams)
 
-    print("Playlist saved.")
+    print("Done")
 
 
 if __name__ == "__main__":
