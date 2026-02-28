@@ -3,7 +3,6 @@
 import re
 import html
 import time
-import random
 from urllib.parse import urljoin, quote
 from datetime import datetime
 
@@ -12,7 +11,7 @@ from bs4 import BeautifulSoup
 
 
 BASE_URL = "https://roxiestreams.info/"
-DOMAINS_FILE = "domains.txt"
+DOMAINS_URL = "https://roxiestreams.info/domains.txt"
 
 CATEGORIES = [
     "",
@@ -40,13 +39,17 @@ HEADERS = {
 SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
 
-TIMEOUT = 15
+TIMEOUT = 20
 
 OUTPUT_VLC = "roxiestreams_all.m3u8"
 OUTPUT_TIVIMATE = "roxiestreams_all_tivimate.m3u8"
 
 
-STREAM_PATH_REGEX = re.compile(r"getRandomStream\(['\"]([^'\"]+\.m3u8)['\"],\s*['\"]([^'\"]+)['\"]\)")
+# Match ALL possible getRandomStream calls
+STREAM_REGEX = re.compile(
+    r"getRandomStream\s*\(\s*['\"]([^'\"]+\.m3u8)['\"]\s*,\s*['\"]([^'\"]+)['\"]\s*\)",
+    re.IGNORECASE
+)
 
 
 visited_pages = set()
@@ -55,29 +58,24 @@ domains = []
 
 
 # --------------------------------------------------
-# Load domains.txt
+# Load domains from website
 # --------------------------------------------------
 
 def load_domains():
 
     global domains
 
-    try:
+    print("Loading domains...")
 
-        with open(DOMAINS_FILE, "r") as f:
+    r = SESSION.get(DOMAINS_URL, timeout=TIMEOUT)
 
-            domains = [d.strip() for d in f if d.strip()]
+    domains = [d.strip() for d in r.text.splitlines() if d.strip()]
 
-        print("Loaded", len(domains), "domains")
-
-    except:
-
-        print("domains.txt missing")
-        domains = []
+    print("Loaded", len(domains), "domains")
 
 
 # --------------------------------------------------
-# Fetch page
+# Fetch page safely
 # --------------------------------------------------
 
 def fetch(url):
@@ -119,7 +117,7 @@ def clean_title(title):
 
 
 # --------------------------------------------------
-# Build stream URLs
+# Build ALL possible stream URLs
 # --------------------------------------------------
 
 def build_stream_urls(stream_path, subdomain):
@@ -128,15 +126,13 @@ def build_stream_urls(stream_path, subdomain):
 
     for domain in domains:
 
-        url = f"https://{subdomain}.{domain}/{stream_path}"
-
-        urls.append(url)
+        urls.append(f"https://{subdomain}.{domain}/{stream_path}")
 
     return urls
 
 
 # --------------------------------------------------
-# Extract streams from event page
+# Extract streams from ONE event page
 # --------------------------------------------------
 
 def extract_streams_from_event(url):
@@ -156,43 +152,43 @@ def extract_streams_from_event(url):
     if soup.title:
         title = clean_title(soup.title.text)
 
-    streams = []
+    results = []
 
-    matches = STREAM_PATH_REGEX.findall(html_text)
+    matches = STREAM_REGEX.findall(html_text)
 
     for stream_path, subdomain in matches:
 
         urls = build_stream_urls(stream_path, subdomain)
 
-        for u in urls:
+        for stream_url in urls:
 
-            if u not in found_streams:
+            if stream_url not in found_streams:
 
-                found_streams.add(u)
+                found_streams.add(stream_url)
 
-                streams.append((title, u))
+                print("Found stream:", stream_url)
 
-                print("Found:", u)
+                results.append((title, stream_url))
 
-    return streams
+    return results
 
 
 # --------------------------------------------------
-# Crawl category
+# Crawl category pages
 # --------------------------------------------------
 
 def crawl_category(category):
 
     url = urljoin(BASE_URL, category)
 
-    print("Scanning:", url)
+    print("Scanning category:", url)
 
     soup, html = fetch(url)
 
     if not soup:
         return []
 
-    event_pages = set()
+    links = set()
 
     for a in soup.find_all("a", href=True):
 
@@ -200,9 +196,12 @@ def crawl_category(category):
 
         if href.startswith(BASE_URL):
 
-            event_pages.add(href)
+            if href != url:
+                links.add(href)
 
-    return event_pages
+    print("Found", len(links), "event pages")
+
+    return links
 
 
 # --------------------------------------------------
@@ -224,8 +223,7 @@ def write_playlist(streams):
 
         for title, url in streams:
 
-            f.write(f'#EXTINF:-1,{title}\n')
-
+            f.write(f'#EXTINF:-1 group-title="RoxieStreams",{title}\n')
             f.write(f'{url}\n\n')
 
 
@@ -235,8 +233,7 @@ def write_playlist(streams):
 
         for title, url in streams:
 
-            f.write(f'#EXTINF:-1,{title}\n')
-
+            f.write(f'#EXTINF:-1 group-title="RoxieStreams",{title}\n')
             f.write(f'{url}|referer={BASE_URL}|user-agent={ua_enc}\n\n')
 
 
@@ -246,35 +243,37 @@ def write_playlist(streams):
 
 def main():
 
-    print("Starting scraper")
+    print("Starting RoxieStreams scraper")
 
     load_domains()
 
-    all_pages = set()
+    all_event_pages = set()
 
     for cat in CATEGORIES:
 
         pages = crawl_category(cat)
 
-        all_pages |= pages
+        all_event_pages |= pages
 
-        time.sleep(1)
+        time.sleep(0.5)
 
-    print("Total pages:", len(all_pages))
+
+    print("\nTotal event pages:", len(all_event_pages))
 
     all_streams = []
 
-    for page in all_pages:
+    for page in all_event_pages:
 
         streams = extract_streams_from_event(page)
 
         all_streams.extend(streams)
 
-    print("Total streams:", len(all_streams))
+
+    print("\nTotal streams found:", len(all_streams))
 
     write_playlist(all_streams)
 
-    print("Done")
+    print("Playlist saved successfully")
 
 
 if __name__ == "__main__":
