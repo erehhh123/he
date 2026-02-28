@@ -3,16 +3,15 @@
 import re
 import html
 import time
-from urllib.parse import urljoin, urlparse, quote
+from urllib.parse import urljoin, quote
 from datetime import datetime
+
 import requests
 from bs4 import BeautifulSoup
 
-# ---------------------------
-# Configuration
-# ---------------------------
 
 BASE_URL = "https://roxiestreams.info/"
+DOMAINS_URL = "https://roxiestreams.info/domains.txt"
 
 CATEGORIES = [
     "",
@@ -31,16 +30,20 @@ CATEGORIES = [
     "ppv-streams-2"
 ]
 
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 HEADERS = {"User-Agent": USER_AGENT, "Referer": BASE_URL}
 SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
-TIMEOUT = 15
+TIMEOUT = 20
 
 OUTPUT_VLC = "Roxiestreams_VLC.m3u8"
 OUTPUT_TIVIMATE = "Roxiestreams_TiviMate.m3u8"
 
-M3U8_REGEX = re.compile(r"https?://[^\"'\s<>]+\.m3u8[^\"'\s<>]*", re.IGNORECASE)
+# Match ALL possible getRandomStream calls
+STREAM_REGEX = re.compile(
+    r"getRandomStream\s*\(\s*['\"]([^'\"]+\.m3u8)['\"]\s*,\s*['\"]([^'\"]+)['\"]\s*\)",
+    re.IGNORECASE
+)
 
 visited_pages = set()
 found_streams = set()
@@ -74,36 +77,33 @@ TV_INFO = {
 
 def load_domains():
     global domains
+    print("Loading domains...")
     try:
-        with open("domains.txt", "r", encoding="utf-8") as f:
-            domains = [d.strip() for d in f.readlines() if d.strip()]
-            print(f"✅ Loaded {len(domains)} domains from local file.")
-            return
-    except FileNotFoundError:
-        print("Local domains.txt not found, fetching from RoxieStreams...")
-
-    try:
-        url = "https://roxiestreams.info/domains.txt"
-        r = requests.get(url, timeout=10)
+        r = SESSION.get(DOMAINS_URL, timeout=TIMEOUT)
         r.raise_for_status()
         domains = [d.strip() for d in r.text.splitlines() if d.strip()]
-        print(f"✅ Loaded {len(domains)} domains from {url}")
+        print(f"Loaded {len(domains)} domains")
     except Exception as e:
         print(f"❌ Failed to load domains: {e}")
         domains = []
 
 # ---------------------------
-# Utility functions
+# Fetch page safely
 # ---------------------------
 
 def fetch(url):
     try:
         r = SESSION.get(url, timeout=TIMEOUT)
-        r.raise_for_status()
+        if r.status_code != 200:
+            return None, None
         soup = BeautifulSoup(r.text, "html.parser")
         return soup, r.text
     except:
         return None, None
+
+# ---------------------------
+# Clean title
+# ---------------------------
 
 def clean_title(title):
     if not title:
@@ -114,24 +114,16 @@ def clean_title(title):
     title = re.sub(r"Roxiestreams.*$", "", title, flags=re.I)
     return title.strip(" -|")
 
-def extract_streams_from_text(text):
-    streams = set()
-    matches = M3U8_REGEX.findall(text)
-    for m in matches:
-        streams.add(m.strip())
-    return streams
+# ---------------------------
+# Build ALL possible stream URLs
+# ---------------------------
 
-def crawl_iframe(url, depth=0):
-    if depth > 3:
-        return set()
-    soup, html_text = fetch(url)
-    if not soup:
-        return set()
-    streams = extract_streams_from_text(html_text)
-    for iframe in soup.find_all("iframe", src=True):
-        iframe_url = urljoin(url, iframe["src"])
-        streams |= crawl_iframe(iframe_url, depth+1)
-    return streams
+def build_stream_urls(stream_path, subdomain):
+    return [f"https://{subdomain}.{domain}/{stream_path}" for domain in domains]
+
+# ---------------------------
+# Extract streams from ONE event page
+# ---------------------------
 
 def extract_streams_from_event(url):
     if url in visited_pages:
@@ -141,52 +133,48 @@ def extract_streams_from_event(url):
     if not soup:
         return []
     title = clean_title(soup.title.text) if soup.title else ""
-    streams = extract_streams_from_text(html_text)
-    # video/source tags
-    for tag in soup.find_all(["video", "source"]):
-        src = tag.get("src")
-        if src and ".m3u8" in src:
-            streams.add(src)
-    # iframe streams
-    for iframe in soup.find_all("iframe", src=True):
-        iframe_url = urljoin(url, iframe["src"])
-        streams |= crawl_iframe(iframe_url)
     results = []
-    for s in streams:
-        results.append((title, s))
+    matches = STREAM_REGEX.findall(html_text)
+    for stream_path, subdomain in matches:
+        urls = build_stream_urls(stream_path, subdomain)
+        for stream_url in urls:
+            if stream_url not in found_streams:
+                found_streams.add(stream_url)
+                results.append((title, stream_url))
+                print(f"Found stream: {title} -> {stream_url}")
     return results
+
+# ---------------------------
+# Crawl category pages
+# ---------------------------
 
 def crawl_category(category):
     url = urljoin(BASE_URL, category)
-    print(f"Scanning: {url}")
+    print("Scanning category:", url)
     soup, html_text = fetch(url)
     if not soup:
         return []
-    event_pages = set()
+    links = set()
     for a in soup.find_all("a", href=True):
         href = urljoin(url, a["href"])
-        if BASE_URL not in href:
-            continue
-        if any(x in href for x in CATEGORIES) and href.rstrip("/") != url.rstrip("/"):
-            continue
-        event_pages.add(href)
-    print(f"Found {len(event_pages)} event links")
-    return event_pages
-
-def get_tv_data_for_category(cat):
-    key = (cat or "misc").lower()
-    if key in TV_INFO:
-        return TV_INFO[key]
-    for k in TV_INFO:
-        if k in key:
-            return TV_INFO[k]
-    return TV_INFO["misc"]
+        if href.startswith(BASE_URL) and href != url:
+            links.add(href)
+    print("Found", len(links), "event pages")
+    return links
 
 # ---------------------------
-# Playlist Writer
+# Get TV info for category
 # ---------------------------
 
-def write_playlist(streams):
+def get_tv_info(category):
+    key = category.lower() if category else "misc"
+    return TV_INFO.get(key, TV_INFO["misc"])
+
+# ---------------------------
+# Write playlist
+# ---------------------------
+
+def write_playlist(streams, categories_map):
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     header = "#EXTM3U\n# Generated {}\n\n".format(timestamp)
     ua_enc = quote(USER_AGENT)
@@ -194,19 +182,19 @@ def write_playlist(streams):
     with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
         f.write(header)
         for title, url, cat in streams:
-            tvg_id, logo, group_name = get_tv_data_for_category(cat)
-            f.write(f'#EXTINF:-1 tvg-logo="{logo}" tvg-id="{tvg_id}" group-title="{group_name}",{title}\n')
+            tvg_id, logo, group_name = get_tv_info(cat)
+            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group_name}",{title}\n')
             f.write(f'{url}\n\n')
 
     with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
         f.write(header)
         for title, url, cat in streams:
-            tvg_id, logo, group_name = get_tv_data_for_category(cat)
-            f.write(f'#EXTINF:-1 tvg-logo="{logo}" tvg-id="{tvg_id}" group-title="{group_name}",{title}\n')
+            tvg_id, logo, group_name = get_tv_info(cat)
+            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group_name}",{title}\n')
             f.write(f'{url}|referer={BASE_URL}|user-agent={ua_enc}\n\n')
 
 # ---------------------------
-# Main
+# MAIN
 # ---------------------------
 
 def main():
@@ -220,20 +208,17 @@ def main():
         time.sleep(0.5)
 
     print(f"\nTotal event pages: {len(all_event_pages)}")
-    all_streams = []
 
+    all_streams = []
     for page in all_event_pages:
         # Determine category from URL
         cat = next((c for c in CATEGORIES if f"/{c}" in page), "misc")
         streams = extract_streams_from_event(page)
         for title, url in streams:
-            if url not in found_streams:
-                found_streams.add(url)
-                all_streams.append((title or "RoxieStream", url, cat))
-                print(f"Found stream: {title or 'RoxieStream'} [{cat}]")
+            all_streams.append((title or "RoxieStream", url, cat))
 
     print(f"\nTotal streams found: {len(all_streams)}")
-    write_playlist(all_streams)
+    write_playlist(all_streams, CATEGORIES)
     print("✅ Playlists saved successfully.")
 
 if __name__ == "__main__":
