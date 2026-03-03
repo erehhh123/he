@@ -183,7 +183,7 @@ def get_tv_info(category):
 # Write playlist
 # ---------------------------
 
-def write_playlist(streams, categories_map):
+def write_playlist(streams):
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     header = "#EXTM3U\n# Generated {}\n\n".format(timestamp)
     ua_enc = quote(USER_AGENT)
