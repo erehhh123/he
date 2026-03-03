@@ -104,13 +104,20 @@ def fetch(url):
 # ---------------------------
 
 def clean_title(title):
+
     if not title:
         return ""
+
     title = html.unescape(title)
     title = re.sub(r"\s+", " ", title)
+
+    # Remove site branding
     title = re.sub(r"Watch.*$", "", title, flags=re.I)
-    title = re.sub(r"Roxiestreams.*$", "", title, flags=re.I)
-    return title.strip(" -|")
+    title = re.sub(r"Roxiestreams?.*$", "", title, flags=re.I)
+
+    title = title.strip(" -|")
+
+    return title
 
 # ---------------------------
 # Build ALL possible stream URLs
