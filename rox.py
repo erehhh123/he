@@ -184,22 +184,44 @@ def get_tv_info(category):
 # ---------------------------
 
 def write_playlist(streams):
+
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     header = "#EXTM3U\n# Generated {}\n\n".format(timestamp)
     ua_enc = quote(USER_AGENT)
 
     with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+
         f.write(header)
+
         for title, url, cat in streams:
+
             tvg_id, logo, group_name = get_tv_info(cat)
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group_name}",{title}\n')
+
+            f.write(
+                f'#EXTINF:-1 tvg-id="{tvg_id}" '
+                f'tvg-logo="{logo}" '
+                f'group-title="Roxiestream - {group_name}",'
+                f'{title}\n'
+            )
+
             f.write(f'{url}\n\n')
 
+
     with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
+
         f.write(header)
+
         for title, url, cat in streams:
+
             tvg_id, logo, group_name = get_tv_info(cat)
-            f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group_name}",{title}\n')
+
+            f.write(
+                f'#EXTINF:-1 tvg-id="{tvg_id}" '
+                f'tvg-logo="{logo}" '
+                f'group-title="Roxiestream - {group_name}",'
+                f'{title}\n'
+            )
+
             f.write(f'{url}|referer={BASE_URL}|user-agent={ua_enc}\n\n')
 
 # ---------------------------
