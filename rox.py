@@ -207,33 +207,38 @@ def write_playlist(streams, categories_map):
 # ---------------------------
 
 def main():
+
     print("▶️ Starting RoxieStreams playlist generation...")
     load_domains()
 
     all_event_pages = []
 
-for cat in CATEGORIES:
+    for cat in CATEGORIES:
 
-    pages = crawl_category(cat)
+        pages = crawl_category(cat)
 
-    all_event_pages.extend(pages)
+        all_event_pages.extend(pages)
 
-    time.sleep(0.5)
+        time.sleep(0.5)
 
     print(f"\nTotal event pages: {len(all_event_pages)}")
 
     all_streams = []
+
     for page, category in all_event_pages:
 
-    streams = extract_streams_from_event(page)
+        streams = extract_streams_from_event(page)
 
-    for title, url in streams:
+        for title, url in streams:
 
-        all_streams.append((title or "RoxieStream", url, category))
+            all_streams.append((title or "RoxieStream", url, category))
 
     print(f"\nTotal streams found: {len(all_streams)}")
-    write_playlist(all_streams, CATEGORIES)
+
+    write_playlist(all_streams)
+
     print("✅ Playlists saved successfully.")
+
 
 if __name__ == "__main__":
     main()
