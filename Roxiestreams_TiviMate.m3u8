@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-03-07 22:01 UTC
+# Generated 2026-03-07 23:11 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://daffodil.833577.xyz/dep.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
@@ -50,18 +50,6 @@ https://602.xn--1000-ugoa0hsb9a0hb.com/ataide.m3u8|referer=https://roxiestreams.
 https://602.serverbandel.sbs/ataide.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.833577.xyz/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.lifesharper.com/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.xn--1000-ugoa0hsb9a0hb.com/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.serverbandel.sbs/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.833577.xyz/tnt.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
@@ -72,6 +60,18 @@ https://602.xn--1000-ugoa0hsb9a0hb.com/tnt.m3u8|referer=https://roxiestreams.inf
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.serverbandel.sbs/tnt.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.833577.xyz/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.lifesharper.com/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.xn--1000-ugoa0hsb9a0hb.com/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.serverbandel.sbs/sn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.833577.xyz/para.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
@@ -108,6 +108,18 @@ https://daffodil.xn--1000-ugoa0hsb9a0hb.com/main.m3u8|referer=https://roxiestrea
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://daffodil.serverbandel.sbs/main.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.833577.xyz/italy.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.lifesharper.com/italy.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.xn--1000-ugoa0hsb9a0hb.com/italy.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.serverbandel.sbs/italy.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://daffodil.833577.xyz/golazo.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
