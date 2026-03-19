@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-03-18 23:19 UTC
+# Generated 2026-03-19 01:01 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://daffodil.lifesharper.com/tudn.m3u8
@@ -8,7 +8,7 @@ https://daffodil.lifesharper.com/tudn.m3u8
 https://601.lifesharper.com/aew.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.lifesharper.com/aew.m3u8
+https://601.lifesharper.com/aewalt.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://601.lifesharper.com/tnt2.m3u8
@@ -47,7 +47,7 @@ https://daffodil.lifesharper.com/prem.m3u8
 https://601.lifesharper.com/fana2.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.lifesharper.com/tnt.m3u8
+https://601.lifesharper.com/fana3.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://601.lifesharper.com/sportv.m3u8
@@ -71,10 +71,10 @@ https://daffodil.lifesharper.com/nba4.m3u8
 https://daffodil.lifesharper.com/nba5.m3u8
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
-https://601.lifesharper.com/nba5.m3u8
+https://daffodil.lifesharper.com/nba6.m3u8
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
-https://daffodil.lifesharper.com/nba6.m3u8
+https://daffodil.lifesharper.com/nba7.m3u8
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
 https://daffodil.lifesharper.com/nba8.m3u8
