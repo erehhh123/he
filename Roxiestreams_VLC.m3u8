@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-03-26 21:20 UTC
+# Generated 2026-03-26 22:14 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://601.premiumjh.shop/main.m3u8
@@ -32,16 +32,10 @@ https://daffodil.premiumjh.shop/chile.m3u8
 https://daffodil.premiumjh.shop/finland.m3u8
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
-https://601.premiumjh.shop/nba.m3u8
-
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
 https://daffodil.premiumjh.shop/nba.m3u8
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
 https://daffodil.premiumjh.shop/nba2.m3u8
-
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
-https://601.premiumjh.shop/nba12.m3u8
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
 https://daffodil.premiumjh.shop/nba3.m3u8
