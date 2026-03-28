@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-03-28 19:21 UTC
+# Generated 2026-03-28 20:15 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.premiumjh.shop/ataide.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
@@ -44,7 +44,7 @@ https://daffodil.premiumjh.shop/fubo.m3u8|referer=https://roxiestreams.info/|use
 https://daffodil.premiumjh.shop/fsp.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://601.premiumjh.shop/ncaa4.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+https://602.premiumjh.shop/ncaa2.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://601.premiumjh.shop/tudn.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
