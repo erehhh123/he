@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-04-01 19:48 UTC
+# Generated 2026-04-01 20:31 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.premiumjh.shop/aew.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
@@ -8,16 +8,22 @@ https://602.premiumjh.shop/aew.m3u8|referer=https://roxiestreams.info/|user-agen
 https://602.premiumjh.shop/aewalt.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/fsp.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+https://daffodil.premiumjh.shop/record.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/fs2.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+https://daffodil.premiumjh.shop/fana.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/one.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+https://daffodil.premiumjh.shop/fana2.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/foxd.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+https://daffodil.premiumjh.shop/fana3.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://602.premiumjh.shop/sportv.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://602.premiumjh.shop/fana.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
 
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-logo="https://i.postimg.cc/jdqKB3LW/Basketball-2.png" group-title="Roxiestream - NBA",RoxieStream
 https://daffodil.premiumjh.shop/nba.m3u8|referer=https://roxiestreams.info/|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/121.0.0.0%20Safari/537.36
