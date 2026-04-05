@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated 2026-04-05 01:08 UTC
+# Generated 2026-04-05 04:25 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.simplyataide.boutique/tnt.m3u8
@@ -38,13 +38,13 @@ https://602.shdigital.site/la.m3u8
 https://602.premiumjh.shop/la.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.simplyataide.boutique/ppv3alt.m3u8
+https://602.simplyataide.boutique/ppv6.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.shdigital.site/ppv3alt.m3u8
+https://602.shdigital.site/ppv6.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.premiumjh.shop/ppv3alt.m3u8
+https://602.premiumjh.shop/ppv6.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.simplyataide.boutique/ppv3.m3u8
