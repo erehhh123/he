@@ -1,32 +1,32 @@
 #EXTM3U
-# Generated 2026-04-10 17:38 UTC
+# Generated 2026-04-10 18:35 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.simplyataide.boutique/ataide.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.shdigital.site/ataide.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.premiumjh.shop/ataide.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.simplyataide.boutique/darts.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.shdigital.site/darts.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.premiumjh.shop/darts.m3u8
-
-#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://602.simplyataide.boutique/xtra.m3u8
 
-#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.shdigital.site/xtra.m3u8
 
-#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.premiumjh.shop/xtra.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.simplyataide.boutique/beines.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.shdigital.site/beines.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.premiumjh.shop/beines.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.simplyataide.boutique/wwe.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.shdigital.site/wwe.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://602.premiumjh.shop/wwe.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://daffodil.simplyataide.boutique/beines.m3u8
@@ -38,22 +38,31 @@ https://daffodil.shdigital.site/beines.m3u8
 https://daffodil.premiumjh.shop/beines.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://602.simplyataide.boutique/cor.m3u8
+https://daffodil.simplyataide.boutique/one.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://602.shdigital.site/cor.m3u8
+https://daffodil.shdigital.site/one.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://602.premiumjh.shop/cor.m3u8
+https://daffodil.premiumjh.shop/one.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://602.simplyataide.boutique/beines.m3u8
+https://daffodil.simplyataide.boutique/bein.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://602.shdigital.site/beines.m3u8
+https://daffodil.shdigital.site/bein.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://602.premiumjh.shop/beines.m3u8
+https://daffodil.premiumjh.shop/bein.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.simplyataide.boutique/football.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.shdigital.site/football.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.premiumjh.shop/football.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://daffodil.simplyataide.boutique/tudn.m3u8
@@ -162,22 +171,4 @@ https://602.shdigital.site/mlb4.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-logo="https://i.postimg.cc/FsFmwC7K/Baseball3.png" group-title="Roxiestream - MLB",RoxieStream
 https://602.premiumjh.shop/mlb4.m3u8
-
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-logo="https://i.postimg.cc/8c4GjMnH/Combat-Sports.png" group-title="Roxiestream - Combat Sports",RoxieStream
-https://602.simplyataide.boutique/wwe.m3u8
-
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-logo="https://i.postimg.cc/8c4GjMnH/Combat-Sports.png" group-title="Roxiestream - Combat Sports",RoxieStream
-https://602.shdigital.site/wwe.m3u8
-
-#EXTINF:-1 tvg-id="PPV.EVENTS.Dummy.us" tvg-logo="https://i.postimg.cc/8c4GjMnH/Combat-Sports.png" group-title="Roxiestream - Combat Sports",RoxieStream
-https://602.premiumjh.shop/wwe.m3u8
-
-#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://i.postimg.cc/yY6B2pkv/F1.png" group-title="Roxiestream - Motorsports",RoxieStream
-https://602.simplyataide.boutique/sbs.m3u8
-
-#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://i.postimg.cc/yY6B2pkv/F1.png" group-title="Roxiestream - Motorsports",RoxieStream
-https://602.shdigital.site/sbs.m3u8
-
-#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://i.postimg.cc/yY6B2pkv/F1.png" group-title="Roxiestream - Motorsports",RoxieStream
-https://602.premiumjh.shop/sbs.m3u8
 
