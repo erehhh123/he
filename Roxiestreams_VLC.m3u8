@@ -1,32 +1,5 @@
 #EXTM3U
-# Generated 2026-04-11 06:44 UTC
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.simplyataide.boutique/main.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.shdigital.site/main.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://602.premiumjh.shop/main.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.simplyataide.boutique/usa.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.shdigital.site/usa.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.premiumjh.shop/usa.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.simplyataide.boutique/main.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.shdigital.site/main.m3u8
-
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
-https://daffodil.premiumjh.shop/main.m3u8
+# Generated 2026-04-11 07:40 UTC
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://daffodil.simplyataide.boutique/dep.m3u8
@@ -47,6 +20,24 @@ https://602.shdigital.site/dep.m3u8
 https://602.premiumjh.shop/dep.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.simplyataide.boutique/bein.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.shdigital.site/bein.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.premiumjh.shop/bein.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.simplyataide.boutique/usa.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.shdigital.site/usa.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
+https://daffodil.premiumjh.shop/usa.m3u8
+
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
 https://602.simplyataide.boutique/wwe.m3u8
 
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://i.postimg.cc/qMm0rc3L/247.png" group-title="Roxiestream - Random Events",RoxieStream
@@ -56,13 +47,40 @@ https://602.shdigital.site/wwe.m3u8
 https://602.premiumjh.shop/wwe.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.simplyataide.boutique/beines.m3u8
+https://daffodil.simplyataide.boutique/sn.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.shdigital.site/beines.m3u8
+https://daffodil.shdigital.site/sn.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/beines.m3u8
+https://daffodil.premiumjh.shop/sn.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://602.simplyataide.boutique/ataide.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://602.shdigital.site/ataide.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://602.premiumjh.shop/ataide.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.simplyataide.boutique/golazo.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.shdigital.site/golazo.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.premiumjh.shop/golazo.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.simplyataide.boutique/cbssn.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.shdigital.site/cbssn.m3u8
+
+#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
+https://daffodil.premiumjh.shop/cbssn.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://daffodil.simplyataide.boutique/one.m3u8
@@ -74,22 +92,13 @@ https://daffodil.shdigital.site/one.m3u8
 https://daffodil.premiumjh.shop/one.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.simplyataide.boutique/bein.m3u8
+https://daffodil.simplyataide.boutique/beines.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.shdigital.site/bein.m3u8
+https://daffodil.shdigital.site/beines.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/bein.m3u8
-
-#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.simplyataide.boutique/football.m3u8
-
-#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.shdigital.site/football.m3u8
-
-#EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
-https://daffodil.premiumjh.shop/football.m3u8
+https://daffodil.premiumjh.shop/beines.m3u8
 
 #EXTINF:-1 tvg-id="Soccer.Dummy.us" tvg-logo="https://i.postimg.cc/HsWHFvV0/Soccer.png" group-title="Roxiestream - Soccer",RoxieStream
 https://daffodil.simplyataide.boutique/tudn.m3u8
